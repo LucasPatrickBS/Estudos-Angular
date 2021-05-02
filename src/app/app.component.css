@@ -1,0 +1,112 @@
+root{
+  /*CI&T Primary colors*/
+  --color-primary: #d71f3c;
+  --color-primary-dark: #971629;
+  --color-primary-light: #e77989;
+
+  /*CI&T Secundary colors*/
+  --color-secundary: #23bec6;
+  --color-secundary-dark: #19958b;
+  --color-secundary-light: #7bd8dd;
+
+  /*CI&T Status colors*/
+  --color-status-success: #70ae6e;
+  --color-status-danger: --color-primary;
+  --color-status-warning: #f9a03f;
+
+  /*CI&T Gray colors*/
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+
+  /*CI&T B&W*/
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /*CI&T Typography colors*/
+  --color-text: --color-gray-900;
+  --color-text-light: --color-gray-600;
+
+  /*CI&T Gradients*/
+  --color-gradient-primary: linear-gradient(
+    90deg,
+    --color-primary 0%,
+    --color-primary-dark 100%
+  );
+  --color-gradient-secondary: linear-gradient(
+    90deg,
+    --color-secundary 0%,
+    --color-secundary-dark 100%
+  );
+  --color-gradient-gray-dark: linear-gradient(
+    90deg,
+    --color-gray-600 0%,
+    --color-gray-800 100%
+  );
+  --color-gradient-gray-light: linear-gradient(
+    90deg,
+    --color-gray-200 0%,
+    --color-gray-400 100%
+  );
+
+}
+*{
+margin: 0;
+}
+.ciandt-ps-login-page {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-login {
+  display: flex;
+  max-width: 540px;
+  max-height: 254px;
+  padding: 64px 0px;
+  margin-top: 3rem;
+  margin-bottom: 15rem;
+  background: var(--color-gray-100);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 8px;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-box {
+  display: flex;
+
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.google-button {
+  width: 70%;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+  background: var(--color-white);
+  border: none;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
